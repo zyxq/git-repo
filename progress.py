@@ -13,10 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
-import sys
-from time import time
-from trace import IsTrace
+
 
 _NOT_TTY = not os.isatty(2)
 
@@ -28,7 +25,7 @@ class Progress(object):
     self._lastp = -1
     self._start = time()
     self._show = False
-    self._units = units
+
 
   def update(self, inc=1):
     self._done += inc
