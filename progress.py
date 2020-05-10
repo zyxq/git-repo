@@ -13,10 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
-import sys
-from time import time
-from trace import IsTrace
+
 
 _NOT_TTY = not os.isatty(2)
 
